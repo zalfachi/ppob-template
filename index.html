@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PPOB Payment</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-gray-100">
+        <nav class="bg-blue-600 text-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-lg font-bold">PPOB Payment</h1>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover : underline">Home</a></li>
+                    <li><a href="#" class="hover : underline">Layanan</a></li>
+                    <li><a href="#" class="hover : underline">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="text-center py-20 bg-blue-500 text-white">
+            <h2 class="text-3xl font-bold">Solusi Pembayaran Online Cepat & Mudah</h2>
+            <p class="mt-2 text-lg">Bayar tagihan listrik, pulsa, PDAM, dan lainnya dalam satu tempat.</p>
+            <a href="#" class="mt-4 inline-block bg-white text-blue-600 py-2 px-6 rounded">Mulai Sekarang</a>
+        </section>
+
+        <section class="container mx-auto p-8 bg-white shadow mt-8 rounded">
+           <h3 class="text-xl font-semibold text-gray-800">Cek & Bayar Tagihan</h3>
+           <form id="paymentForm" class="mt-4">
+            <select id="serviceType" class="w-full p-2 border rounded">
+                <option value="pin">PLN</option>
+                <option value="pulsa">Pulsa</option>
+                <option value="pdam">PDAM</option>
+            </select>
+            <input type="text" id="customer" class="w-full p-2 border rounded mt-2" placeholder="Masukkan ID Pelanggan">
+            <button type="submit" class="mt-4 bg-blue-600 text-white p-2 w-full rounded">Cek Tagihan</button>
+           </form> 
+           <p id="paymentResult" class="mt-4 text-green-600"></p>
+        </section>
+
+        <footer class="text-center py-4 bg-gray-800 text-white mt-8">
+            <p>Copy Right - 2025 PPOB Payment - Semua Hak Dilindungi</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
